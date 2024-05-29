@@ -17,16 +17,24 @@ BlogWritingCrew is an automated application designed to streamline the process o
 - [Langchain](https://github.com/hwchase17/langchain)
 - [dotenv](https://github.com/theskumar/python-dotenv)
 
-### pip install -r requirements.txt
-
-# .env
-# Add your environment variables here
-
-# streamlit run app.py
-
 ### Clone the Repository
 ```bash
 git clone https://github.com/yourusername/BlogWritingCrew.git
 cd BlogWritingCrew 
+```
+### Install dependencies
+```bash
+pip install -r requirements.txt
+```
+### Environment Variables
+Create a `.env` file in the root directory and add the necessary environment variables:
+```bash
+ .env
+ Add your environment variables here
+ ```
 
+### Run the App
+```bash
+streamlit run app.py
+```
 
