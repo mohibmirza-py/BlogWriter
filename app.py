@@ -4,21 +4,22 @@ from crewai_tools import SerperDevTool
 from crewai import Agent, Task, Crew
 import streamlit as st 
 from langchain_google_genai import ChatGoogleGenerativeAI
-
+import os
 
 
 from dotenv import load_dotenv
 load_dotenv()
 warnings.filterwarnings('ignore')
 
-# LLM = ChatGoogleGenerativeAI( #type: ignore 
-#     model="gemini-1.5-flash-latest",
-#     )
-
+#Use Groq for open-source LLMs
 LLM = ChatGroq(
     model="llama3-70b-8192",
 )
 
+#Use OpenAI's GPT
+os.environ["OPENAI_MODEL_NAME"] = "gpt-3.5-turbo" #gpt-4 by default
+
+# In this code we are using Groq
 search_tool = SerperDevTool()
 planner = Agent(
     role="Content Planner",
