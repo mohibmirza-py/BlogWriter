@@ -4,3 +4,4 @@ crewai
 streamlit
 langchain-google-genai
 python-dotenv
+chromadb==0.3.29
