@@ -17,7 +17,7 @@ LLM = ChatGroq(
 )
 
 #Use OpenAI's GPT
-os.environ["OPENAI_MODEL_NAME"] = "gpt-3.5-turbo" #gpt-4 by default
+# os.environ["OPENAI_MODEL_NAME"] = "gpt-3.5-turbo" #gpt-4 by default
 
 # In this code we are using Groq
 search_tool = SerperDevTool()
