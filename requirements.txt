@@ -1,7 +1,7 @@
 langchain-groq
 crewai-tools
-crewai
+crewai==0.30.11
 streamlit
 langchain-google-genai
 python-dotenv
-chromadb==0.3.29
+pysqlite3-binary 

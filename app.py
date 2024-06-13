@@ -5,7 +5,9 @@ from crewai import Agent, Task, Crew
 import streamlit as st 
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os
-
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 from dotenv import load_dotenv
 load_dotenv()
